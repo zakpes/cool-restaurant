@@ -1,0 +1,89 @@
+#foo {
+    -skrollr-animation-name: animation1;
+}
+
+@-skrollr-keyframes animation1 {
+    0 {transform: rotate(0deg);}
+    200 {transform: rotate(360deg);}
+}
+
+
+
+/* === MEDIA QUERIES DESKTOP-FIRST === */
+
+/* Large Devices, Wide Screens */
+@media screen and ( max-width : 1199px ) {
+
+
+}
+
+/* Medium Devices, Desktops */
+@media screen and ( max-width : 991px ) {
+
+
+}
+
+/* Small Devices, Tablets */
+@media screen and ( max-width : 767px ) {
+
+
+}
+
+@media screen and ( max-width : 568px ) {
+
+
+}
+
+/* Extra Small Devices, Phones */
+@media screen and ( max-width : 480px ) {
+
+
+}
+
+/* Custom, iPhone Retina */
+@media screen and (max-width : 320px) {
+
+
+}
+
+/* === end media queries desktop-first === */
+
+
+/* === MEDIA QUERIES MOBILE-FIRST === */
+
+/* Custom, iPhone Retina */
+@media screen and ( min-width : 320px ) {
+
+
+}
+
+/* Extra Small Devices, Phones */
+@media screen and ( min-width : 480px ) {
+
+
+}
+
+@media screen and ( min-width : 568px ) {
+
+
+}
+
+/* Small Devices, Tablets */
+@media screen and ( min-width : 768px ) {
+
+
+}
+
+/* Medium Devices, Desktops */
+@media screen and ( min-width : 992px ) and ( max-width : 1199px ) {
+
+
+}
+
+/* Large Devices, Wide Screens */
+@media screen and ( min-width : 1200px ) {
+
+    
+}
+
+/* === end media queries mobile-first === */
