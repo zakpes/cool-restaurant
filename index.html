@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="css/font-awesome-4.4.0/css/font-awesome.min.css">
 
     <!--  Google Fonts  -->
-    <link href='https://fonts.googleapis.com/css?family=Raleway:400,700|Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,700|Montserrat:400,700|Dancing+Script:400,700|Lato:400,700' rel='stylesheet' type='text/css'>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -38,14 +38,185 @@
 
     <!-- HEADER -->
     <header>
-
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2 class="logo">CoolRestaurant</h2>
+                    <span class="order glyphicon glyphicon-shopping-cart"></span>
+                    <h4>Make an order</h4>
+                </div><!-- /.col-xs-12 -->
+            </div><!-- /.row -->
+        </div><!-- /.container -->
     </header><!-- /header -->
 
 
     <!-- SECTION -->
-    <section>
+    <section id="content-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
 
-    </section><!-- /section -->
+                    <h1 class="menu-title"><span></span>~MENU~<span></span></h1>
+
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+                        <div class="panel panel-default">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                <div class="panel-heading" role="tab" id="headingOne">
+                                    <h4 class="panel-title">
+                                        Drink
+                                    </h4>
+                                    <span class="fa fa-glass"></span>
+                                    <span class="fa fa-caret-down"></span>
+                                </div>
+                            </a>
+                            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                <div class="panel-body">
+                                    <ul class="drink-items">
+                                        <li>Coffee</li>
+                                        <hr>
+                                        <li>Wine</li>
+                                        <hr>
+                                        <li>Soft Drinks</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <div class="panel-heading" role="tab" id="headingTwo">
+                                    <h4 class="panel-title">
+                                        Hors d'oeuvre
+                                    </h4>
+                                    <img src="img/hors.svg" height="20px" alt="" />
+                                    <span class="fa fa-caret-down"></span>
+                                </div>
+                            </a>
+                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                <div class="panel-body">
+                                    <ul class="hors-items">
+                                        <li>Cheese plate</li>
+                                        <li>Cold meat</li>
+                                        <li>Canapes</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <div class="panel-heading" role="tab" id="headingThree">
+                                    <h4 class="panel-title">
+                                        Salad
+                                    </h4>
+                                    <img src="img/salad.svg" height="20px" alt="" />
+                                    <span class="fa fa-caret-down"></span>
+                                </div>
+                            </a>
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                <div class="panel-body">
+                                    <ul class="Salad-items">
+                                        <li>Caesar salad</li>
+                                        <li>Vitamin salad</li>
+                                        <li>Mixed vegetables salad</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                <div class="panel-heading" role="tab" id="headingFour">
+                                    <h4 class="panel-title">
+                                        Soup
+                                    </h4>
+                                    <img src="img/soup.svg" height="20px" alt="" />
+                                    <span class="fa fa-caret-down"></span>
+                                </div>
+                            </a>
+                            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                <div class="panel-body">
+                                    <ul class="soup-items">
+                                        <li>Tomato soup</li>
+                                        <li>Mushroom cream soup</li>
+                                        <li>Miso soup</li>
+                                        <li>Chicken soup</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                <div class="panel-heading" role="tab" id="headingFive">
+                                    <h4 class="panel-title">
+                                        Fish
+                                    </h4>
+                                    <img src="img/fish.svg" height="20px" alt="" />
+                                    <span class="fa fa-caret-down"></span>
+                                </div>
+                            </a>
+                            <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                                <div class="panel-body">
+                                    <ul class="fish-items">
+                                        <li>Salmon</li>
+                                        <li>Tuna</li>
+                                        <li>Herring</li>
+                                        <li>Mackerel</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                <div class="panel-heading" role="tab" id="headingSix">
+                                    <h4 class="panel-title">
+                                        Meat
+                                    </h4>
+                                    <img src="img/meat.svg" height="20px" alt="" />
+                                    <span class="fa fa-caret-down"></span>
+                                </div>
+                            </a>
+                            <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                                <div class="panel-body">
+                                    <ul class="meat-items">
+                                        <li>Pork</li>
+                                        <li>Beef</li>
+                                        <li>Lamb</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                <div class="panel-heading" role="tab" id="headingSeven">
+                                    <h4 class="panel-title">
+                                        Dessert
+                                    </h4>
+                                    <img src="img/dessert.svg" height="20px" alt="" />
+                                    <span class="fa fa-caret-down"></span>
+                                </div>
+                            </a>
+                            <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+                                <div class="panel-body">
+                                    <ul class="dessert-items">
+                                        <li>Cake</li>
+                                        <li>Pie</li>
+                                        <li>Pancakes</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div><!-- /.col-xs-12 -->
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </section><!-- /#content-main -->
 
 
     <!-- FOOTER -->
