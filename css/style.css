@@ -7,46 +7,153 @@
     200 {transform: rotate(360deg);}
 }
 
+/* colors
 
+red: #ff6666;
+lightred: #fff2f2;
+purple1: #994cff;
+purple2: #8136a5;
+blue: #4ca5ff;
+green: #a5ff4c;
+yellow: #f4ff66;
+orange: #ffb14c;
+brown: #824734;
 
-/* === MEDIA QUERIES DESKTOP-FIRST === */
+ */
 
-/* Large Devices, Wide Screens */
-@media screen and ( max-width : 1199px ) {
-
-
+html, body {
+    font-family: "Lato", sans-serif;
+    background: #191919;
+    color: #191919;
 }
 
-/* Medium Devices, Desktops */
-@media screen and ( max-width : 991px ) {
-
-
+a {
+    text-decoration: none;
+    color: initial;
 }
 
-/* Small Devices, Tablets */
-@media screen and ( max-width : 767px ) {
-
-
+a:hover {
+    text-decoration: none;
+    color: initial;
 }
 
-@media screen and ( max-width : 568px ) {
-
-
+ul {
+    text-align: center;
+    padding-left: 0;
 }
 
-/* Extra Small Devices, Phones */
-@media screen and ( max-width : 480px ) {
-
-
+ul li {
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
 }
 
-/* Custom, iPhone Retina */
-@media screen and (max-width : 320px) {
-
-
+.logo h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: orange;
+    margin-top: 26px;
 }
 
-/* === end media queries desktop-first === */
+.logo span {
+    color: red;
+}
+
+.order h2,
+.order + h4,
+.menu-title,
+.panel-title,
+.panel-body,
+.panel-heading img {
+    color: #262626;
+}
+
+.order {
+	font-size: 24px;
+	margin-top: 20px;
+    margin-bottom: 10px;
+	text-align: center;
+	display: block;
+}
+
+.order + h4 {
+    text-align: center;
+}
+
+.menu-title {
+	font-family: "Dancing Script", cursive;
+	font-weight: 700;
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+#headingOne, .panel-drink-items {
+    background: #8136a5;
+}
+
+#headingTwo, .panel-hors-items {
+    background: #4ca5ff;
+}
+
+#headingThree, .panel-salad-items {
+    background: #a5ff4c;
+}
+
+#headingFour, .panel-soup-items {
+    background: #f4ff66;
+}
+
+#headingFive, .panel-fish-items {
+    background: #ffb14c;
+}
+
+#headingSix, .panel-meat-items {
+    background: #824734;
+}
+
+#headingSeven, .panel-dessert-items {
+    background: #824734;
+}
+
+.panel-body li:not(:last-child)::after {
+    content: "";
+    display: block;
+    margin: 10px auto;
+    height: 1px;
+    background: #e5e5e5;
+    text-align: center;
+    width: 50%;
+}
+
+.panel-body li:last-child {
+    padding-bottom: 10px;
+}
+
+.panel-title {
+	margin: 0 4px 0 0;
+	font-size: 20px;
+	display: inline-block;
+	font-weight: bold;
+}
+
+.panel-heading span {
+    font-size: 20px;
+    float: right;
+}
+
+ul li:hover,
+.panel a:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.panel-heading img {
+    height: 20px;
+    width: auto;
+    margin-top: -4px;
+}
 
 
 /* === MEDIA QUERIES MOBILE-FIRST === */
@@ -83,7 +190,7 @@
 /* Large Devices, Wide Screens */
 @media screen and ( min-width : 1200px ) {
 
-    
+
 }
 
 /* === end media queries mobile-first === */
