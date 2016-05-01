@@ -40,6 +40,7 @@ a:hover {
 ul {
     text-align: center;
     padding-left: 0;
+    list-style-position: inside;
 }
 
 ul li {
@@ -55,19 +56,27 @@ ul li {
     font-weight: bold;
     color: orange;
     margin-top: 26px;
+    margin-left: 10px;
 }
 
 .logo span {
     color: red;
 }
 
-.order h2,
-.order + h4,
-.menu-title,
+.panel-heading {
+    padding: 15px;
+    text-align: center;
+}
+
 .panel-title,
-.panel-body,
-.panel-heading img {
-    color: #262626;
+.panel-body {
+    color: #333333;
+}
+
+.menu-title,
+.order,
+.order-link {
+    color: #e5e5e5;
 }
 
 .order {
@@ -78,8 +87,13 @@ ul li {
 	display: block;
 }
 
-.order + h4 {
+.order-link {
     text-align: center;
+    font-size: 18px;
+}
+
+.order-link {
+	float: right;
 }
 
 .menu-title {
@@ -115,7 +129,7 @@ ul li {
 }
 
 #headingSeven, .panel-dessert-items {
-    background: #824734;
+    background: #e50026;
 }
 
 .panel-body li:not(:last-child)::after {
@@ -123,9 +137,9 @@ ul li {
     display: block;
     margin: 10px auto;
     height: 1px;
-    background: #e5e5e5;
+    background: #262626;
     text-align: center;
-    width: 50%;
+    width: 40%;
 }
 
 .panel-body li:last-child {
@@ -136,23 +150,28 @@ ul li {
 	margin: 0 4px 0 0;
 	font-size: 20px;
 	display: inline-block;
-	font-weight: bold;
 }
 
 .panel-heading span {
     font-size: 20px;
     float: right;
+    color: #262626;
 }
 
 ul li:hover,
 .panel a:hover {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .panel-heading img {
     height: 20px;
     width: auto;
-    margin-top: -4px;
+    margin-top: -6px;
+}
+
+.order-link:hover,
+.order-link:hover .order {
+    color: #333333;
 }
 
 
