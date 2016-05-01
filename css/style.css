@@ -32,7 +32,7 @@ a {
     color: initial;
 }
 
-a:hover {
+a:hover, a:focus {
     text-decoration: none;
     color: initial;
 }
@@ -156,6 +156,13 @@ ul li {
     font-size: 20px;
     float: right;
     color: #262626;
+    transition: all 0.5s;
+}
+
+.rotate-caret {
+    -webkit-transform: rotate(180deg); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+      -ms-transform: rotate(180deg); /* IE 9 */
+          transform: rotate(180deg); /* IE 10, Fx 16+, Op 12.1+ */
 }
 
 ul li:hover,
@@ -207,6 +214,10 @@ ul li:hover,
 
     .panel-title {
     	font-size: 24px;
+    }
+
+    .panel-heading img {
+    	height: 24px;
     }
 
     .panel-heading span {
