@@ -146,6 +146,22 @@ ul li {
     padding-bottom: 10px;
 }
 
+.panel-body ul li {
+    position: relative;
+}
+
+.panel-body img {
+    position: absolute;
+    max-width: 40%;
+    right: 0;
+    border-radius: 5px;
+}
+
+.panel-body img:first-of-type {
+    bottom: 100%;
+    right: -10px;
+}
+
 .panel-title {
 	margin: 0 4px 0 0;
 	font-size: 20px;
