@@ -146,7 +146,7 @@ ul li {
     padding-bottom: 10px;
 }
 
-.panel-body ul {
+.panel-body ul li {
     position: relative;
 }
 
@@ -159,15 +159,7 @@ ul li {
 
 .panel-body img:first-of-type {
     bottom: 100%;
-    right: 0;
-}
-
-.panel-body img:nth-of-type(2) {
-    top: -20px;
-}
-
-.panel-body img:nth-of-type(3) {
-    top: 24%;
+    right: -10px;
 }
 
 .panel-title {

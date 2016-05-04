@@ -21,14 +21,14 @@ $(function() {
 
         var $this = $(this);
 
-        $this.next("img").fadeIn("fast");
+        $this.children("img").fadeIn(300);
     })
 
     $(".panel-body ul li").mouseleave(function() {
 
         var $this = $(this);
 
-        $this.next("img").fadeOut("fast");
+        $this.children("img").fadeOut(300);
     })
 
 })
