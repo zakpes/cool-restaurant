@@ -22,13 +22,36 @@ $(function() {
         var $this = $(this);
 
         $this.children("img").fadeIn(300);
-    })
-
-    $(".panel-body ul li").mouseleave(function() {
+    }).mouseleave(function() {
 
         var $this = $(this);
 
         $this.children("img").fadeOut(300);
+    })
+
+    // Flip menu
+    $(".page, .panel-body:not(.panel-body:first-child)").click(function () {
+
+        var $this = $(this);
+        var $zNum = $this.attr("rel");
+
+        if ($this.hasClass("flip-page")) {
+
+            $this.removeClass("flip-page");
+            $this.css("z-index", "0");
+        } else {
+
+            $this.addClass("flip-page");
+            $this.css("z-index", $zNum);
+        }
+    })
+
+    // Flip menu return to front page
+    $(".panel-body:first-child").click(function () {
+
+        var $this = $(this);
+
+        $(".panel-body").removeClass("flip-page").css("z-index", "0");
     })
 
 })
