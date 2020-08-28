@@ -118,30 +118,37 @@ body {
 
 .panel-1 {
     background-color: hsl(261, 47%, 58%);
+    background-color: hsl(259.8, 72.7%, 69.8%);
 }
 
 .panel-2 {
     background-color: hsl(200, 66%, 69%);
+    background-color: hsl(207.2, 72.6%, 57.1%);
 }
 
 .panel-3 {
     background-color: hsl(83, 63%, 61%);
+    background-color: hsl(145, 45.8%, 50.8%);
 }
 
 .panel-4 {
     background-color: hsl(43, 90%, 76%);
+    background-color: hsl(47, 80.9%, 61%);
 }
 
 .panel-5 {
     background-color: hsl(21, 83%, 64%);
+    background-color: hsl(27.2, 83.6%, 57.1%);
 }
 
 .panel-6 {
     background-color: hsl(360, 71%, 66%);
+    background-color: hsl(0, 87.8%, 67.8%);
 }
 
 .panel-7 {
     background-color: hsl(330, 72%, 65%);
+    background-color: hsl(331.1, 79.2%, 66.1%);
 }
 
 #headingOne,
@@ -152,6 +159,7 @@ body {
 #headingSix,
 #headingSeven {
     background-color: transparent;
+    box-shadow: 0 2px 4px hsl(0, 0%, 10%), inset 0 -2px 4px 0 hsla(0, 0%, 0%, 0.4);
 }
 
 #headingOne {
@@ -185,36 +193,43 @@ body {
 #headingOne .panel-title,
 .panel-1 .panel-body {
     color: hsl(263, 85%, 18%);
+    color: hsl(254.4, 41%, 33.9%);
 }
 
 #headingTwo .panel-title,
 .panel-2 .panel-body {
     color: hsl(200, 82%, 24%);
+    color: hsl(214.6, 41.3%, 28%);
 }
 
 #headingThree .panel-title,
 .panel-3 .panel-body {
     color: hsl(81, 86%, 14%);
+    color: hsl(152.4, 42.4%, 23.1%);
 }
 
 #headingFour .panel-title,
 .panel-4 .panel-body {
     color: hsl(43, 86%, 17%);
+    color: hsl(30, 75.8%, 25.9%);
 }
 
 #headingFive .panel-title,
 .panel-5 .panel-body {
     color: hsl(22, 83%, 19%);
+    color: hsl(14.2, 60.8%, 30%);
 }
 
 #headingSix .panel-title,
 .panel-6 .panel-body {
     color: hsl(360, 92%, 20%);
+    color: hsl(0, 46.8%, 31%);
 }
 
 #headingSeven .panel-title,
 .panel-7 .panel-body {
     color: hsl(330, 79%, 20%);
+    color: hsl(318.2, 51.4%, 29%);
 }
 
 .panel-1 .panel-body li:not(:last-child)::after {

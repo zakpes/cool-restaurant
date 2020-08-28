@@ -104,6 +104,9 @@ ul li {
 	margin-bottom: 20px;
 }
 
+.panel-front-page {
+}
+
 #headingOne, .panel-drink-items,
 .panel-backface-drink-items {
     /*background: #8136a5;*/
@@ -239,7 +242,7 @@ ul li:hover,
     height: 100%;
     top: 0;
     left: 0;
-    transition: all 1s;
+    transition: all 1s ease-in-out;
     transform-origin: left;
     transform-style: preserve-3d;
     backface-visibility: hidden;
@@ -249,12 +252,26 @@ ul li:hover,
     border-top: 1px solid hsl(0, 0%, 90%);
     border-bottom: 1px solid hsl(0, 0%, 90%);
     border-right: 3px solid hsl(0, 0%, 60%);
+    transform: rotateY(0deg);
+    /* overflow: hidden; */
+    background: url(http://turnjs.com/samples/docs/pics/right-border.png) 0 0 no-repeat;
+    background-size: cover;
+    z-index: auto;
+}
+
+.page-container .panel-front-page {
+    background: linear-gradient(to top right, hsl(39, 100%, 50%), hsl(0, 100%, 27.3%));
+}
+
+.page-container .panel-body.overflow-visible {
+    overflow: visible;
 }
 
 .page-container .panel-backface {
+    position: absolute;
 	transform-origin: center;
 	transform: rotateY(180deg);
-	backface-visibility: hidden;
+	/* backface-visibility: hidden; */
 	border-radius: 10px 0 0 10px;
 	border-right: 1px solid #181818;
 	border-left: 1px solid white;
@@ -279,7 +296,7 @@ ul li:hover,
 }
 
 .panel-backface-front-page {
-    background-color: hsl(0, 0%, 30%);;
+    background-color: hsl(0, 0%, 30%);
 }
 
 .page-1 {
@@ -294,7 +311,7 @@ ul li:hover,
     background-color: yellow;
 }
 
-.flip-page {
+.page-container .panel-body.flip-page {
     transform: rotateY(-179deg);
 }
 

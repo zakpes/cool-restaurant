@@ -30,7 +30,7 @@ $(function() {
     })
 
     // Flip menu
-    $(".page, .panel-body:not(.panel-body:first-child)").click(function () {
+    $(".page, .panel-body").click(function () {
 
         var $this = $(this);
         var $zNum = $this.attr("rel");
@@ -38,20 +38,20 @@ $(function() {
         if ($this.hasClass("flip-page")) {
 
             $this.removeClass("flip-page");
-            $this.css("z-index", "0");
+            // $this.css("z-index", "0");
         } else {
 
             $this.addClass("flip-page");
-            $this.css("z-index", $zNum);
+            // $this.css("z-index", $zNum);
         }
     })
 
     // Flip menu return to front page
-    $(".panel-body:first-child").click(function () {
+    // $(".panel-body:first-child").click(function () {
 
-        var $this = $(this);
+    //     var $this = $(this);
 
-        $(".panel-body").removeClass("flip-page").css("z-index", "0");
-    })
+    //     $(".panel-body").removeClass("flip-page").css("z-index", "0");
+    // })
 
 })
